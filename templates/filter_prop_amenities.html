@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Select Properties</title>
+</head>
+<body>
+    <img src="https://www.propertyfinder.com/wp-content/themes/pf/images/logo-en.svg" width="200" height="200">
+
+    <h1>Choose Company</h1>
+    <form action="/prop_view_amenity" method="post">
+        <select name = "prop_City">
+            {%for l in list%}
+            <option value="{{l}}">{{l[0]}}</option>
+            {%endfor%}
+        </select>
+
+        <input type="checkbox" name="Unfurnished">
+        <label for="Unfurnished"> Unfurnished</label><br>
+
+        <input type="checkbox" name="Built in Wardrobes">
+        <label for="Built in Wardrobes"> Built in Wardrobes</label><br>
+
+        <input type="checkbox" name="Concierge">
+        <label for="Concierge"> Concierge</label><br>
+
+        <input type="checkbox" name="Pets Allowed">
+        <label for="Pets Allowed"> Pets Allowed</label><br>
+
+        <input type="checkbox" name="Security">
+        <label for="Security"> Security</label><br>
+
+        <input type="checkbox" name="Shared Spa">
+        <label for="Shared Spa"> Shared Spa</label><br>
+
+        <input type="checkbox" name="View of Landmark">
+        <label for="View of Landmark"> View of Landmark</label><br>
+
+        <input type="checkbox" name="Barbecue Area">
+        <label for="Barbecue Area"> Barbecue Area</label><br>
+
+        <input type="checkbox" name="Children's Play Area">
+        <label for="Children's Play Area"> Children's Play Area</label><br>
+
+        <input type="checkbox" name="Children's Pool">
+        <label for="Children's Pool"> Children's Pool</label><br>
+
+        <input type="checkbox" name="Covered Parking">
+        <label for="Covered Parking"> Covered Parking</label><br>
+
+        <input type="checkbox" name="Lobby in Building">
+        <label for="Lobby in Building"> Lobby in Building</label><br>
+
+        <input type="checkbox" name="Shared Gym">
+        <label for="Shared Gym"> Shared Gym</label><br>
+
+        <input type="checkbox" name="Shared Pool">
+        <label for="Shared Pool"> Shared Pool</label><br>
+
+        <input type="checkbox" name="View of Water">
+        <label for="View of Water"> View of Water</label><br>
+
+        <input type="checkbox" name="Central A/C">
+        <label for="Central A/C"> Central A/C</label><br>
+
+        <input type="checkbox" name="Kitchen Appliances">
+        <label for="Kitchen Appliances"> Kitchen Appliances</label><br>
+
+        <input type="checkbox" name="Maid Service">
+        <label for="Maid Service"> Maid Service</label><br>
+
+        <input type="checkbox" name="Maids Room">
+        <label for="Maids Room"> Maids Room</label><br>
+
+        <input type="checkbox" name="Private Garden">
+        <label for="Private Garden"> Private Garden</label><br>
+
+        <input type="checkbox" name="Private Gym">
+        <label for="Private Gym"> Private Gym</label><br>
+
+        <input type="checkbox" name="Private Jacuzzi">
+        <label for="Private Jacuzzi"> Private Jacuzzi</label><br>
+
+        <input type="checkbox" name="Private Pool">
+        <label for="Private Pool"> Private Pool</label><br>
+
+        <input type="checkbox" name="Study">
+        <label for="Study"> Study</label><br>
+
+        <input type="checkbox" name="Walk-in Closet">
+        <label for="Walk-in Closet"> Walk-in Closet</label><br>
+
+        <input type="checkbox" name="Furnished">
+        <label for="Furnished"> Furnished</label><br>
+
+        <input type="checkbox" name="Partly furnished">
+        <label for="Partly furnished"> Partly furnished</label><br>
+
+
+        <input type="submit" class="button">
+
+</body>
+</html>

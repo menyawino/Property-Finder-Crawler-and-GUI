@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Enter Review</title>
+</head>
+<body>
+    <img src="https://www.propertyfinder.com/wp-content/themes/pf/images/logo-en.svg" width="200" height="200">
+
+    <form action="/review_enter" method="post">
+        <input type="text" name = "Review_Rating" min="0" max="10">
+        <input type="text" name = "Review_Textual">
+        <input type="text" name = "Review_User_Email">
+        <input type="text" name = "Review_Agent_Number">
+        <input type="text" name = "ID">
+        <input type="submit" class="button">
+    </form>
+</body>
+</html>
